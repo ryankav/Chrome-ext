@@ -1,0 +1,17 @@
+/*prevent recommended videos from rendering*/
+#secondary{
+    display:none;
+}
+
+/*.video-stream{
+    width:100% !important;
+    height:auto !important;
+}
+
+.ytp-chrome-bottom{
+    width: calc(100% - 12px) !important;
+}
+
+.ytp-chapter-hover-container{
+    width: calc(100% - 12px) !important;
+}*/

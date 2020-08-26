@@ -1,0 +1,102 @@
+/*Prevent children of body from being displayed so that we can select what to render*/
+body *{display: none;}
+
+body > div.gstl_50{
+    display:block;
+    height:50px;
+}
+/*Create animation that we can add to elments that we wish to render*/
+.element-fade-in {
+    display: initial;
+    animation: fade-in 0.1s;
+    }
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*define size and properties of background container and the two sub-blocks within it*/
+
+.basic-youtube{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-screen{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+
+#logo-container{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:calc(100% - 311px);
+}
+
+
+#search-container{
+    position:fixed;
+    top:311px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+/*Center search button icon*/
+
+#search-icon-legacy{
+    display: inline-block;
+}
+
+#search-icon-legacy yt-icon{
+
+display: var(--layout-inline_-_display);
+}
+
+
+/*Center search bar and set it's size*/
+
+
+#search{
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 1px 2px;
+    flex: 0 1 560px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*center logo and set it's size*/
+
+#logo.ytd-masthead{
+    width: 288px !important;
+    display:flex;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logo.ytd-topbar-logo-renderer{
+    width: 272px;
+}
+
+#logo-icon-container.ytd-topbar-logo-renderer.style-scope{
+    width:272px;
+    height:83px;
+}
+

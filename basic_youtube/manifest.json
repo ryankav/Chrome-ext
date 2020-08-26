@@ -1,0 +1,19 @@
+{
+	
+	"manifest_version":2,
+	"name": "Basic Youtube",
+	"version": "0.0.1" ,
+	"description": "Changes Youtube to a basic style - similar to the Google homepage - so that you can search for videos but stops any being, at least visibly, recommended. The aim is to allow you to search for videos as you please and prevent you spending more time on Youtube than you imntended.",
+	"web_accessible_resources":["src/content.js", 
+								"src/home_style.css",
+								"src/video_style.css"],
+		
+	"background":
+		{
+			"scripts":["src/background.js"],
+			"persistent":false
+		},
+		
+	"permissions":["*://*.youtube.com/*","tabs","webNavigation"]
+	}
+	
